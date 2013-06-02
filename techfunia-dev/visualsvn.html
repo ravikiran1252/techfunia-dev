@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TechFunia Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/user-defined.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.png">
+  <body>
+	<!-- top-header starts here	-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html" style="color:#fff;">TechFunia</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+			  <li><a href="repository-systems-main.html">Repository Systems</a></li>
+			  <li><a href="java-main.html">Java</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- top-header emds here	-->
+
+	<div class="container"><!-- Main container -->
+    <div class="row"><!-- row starts here -->
+	
+        <!-- first column -->
+        <div class="span2 first-column" style="border:0px solid #000;">
+          <ul class="nav nav-list bs-docs-sidenav">
+          <li class="home-list active"><a href="visualsvn.html"><i class="icon-chevron-right"></i> VisualSVN </a></li>
+          <li class="home-list"><a href="cvs.html"><i class="icon-chevron-right"></i> CVS </a></li>
+          <li class="home-list"><a href="jenkins.html"><i class="icon-chevron-right"></i> Jenkins </a></li>
+          </ul>
+        </div>
+        <!-- first column -->
+
+        <!-- second column -->
+        <div class="span7 second-column" style="border:0px solid #000; margin:0 0 0 -10px;">
+		
+          <div class="span7 blockquote">
+            <h4><u><i>VisualSVN </i></u></h4><br/>
+            <p>
+			
+            <h5>SubVersion(SVN) :</h5>
+			<p>Subversion is a Software Configuration Management(SCM) implementation. <br/>It allows developers to collaborate on code without need of file sharing system. It allows to track changes on the files and folders. <br/>It allows concurrent development on the same files.<br/>Infact SVN is a version management system designed as a replacement and improvement on CVS.</p>
+			<br/>
+			<h5>VisualSVN :</h5>
+			<p>When working with any repository tool, we will have two systems, i.e., <br/>1) Repository System <br/>2) Client System
+			<h6>Repository System :</h6>
+			Repository System contains the project code. This system is centralized so that any developer who has the authentication can download the code. To keep the project code into the repository system, we need to install <b>repository server software.</b> For example, if we are working with SVN, then we need to install SVN server software in the repository.
+			<h6>Client System :</h6>
+			Client system can access the code from the repository, modify the code and commit the code into the repository. In general, all IDE`s that we are using for project development can act as client system(provided respective plugins should be installed). For example, 1. If our development tool wants to interact with SVN repository, we need SVN plugins in the tool. 2. If our development tool wants to interact with CVS repository, we need CVS plugins in the tool 3. similarly for GIT and ClearCase also.
+			<br/>
+			<b>Note:</b>
+			All IDE`s by default has CVS plugin installed.</p>
+			<br/>
+			<h5>Installing VisualSVN Server Software in the Repository System : </h5>
+			<p>
+			<b>Step 1: </b> Go to http://www.visualsvn.com/server/download/ and download the VisualSVN Server or google with "VisualSVN-Server-2.5.9.msi". Its around 4.57MB file.</br>
+			<b>Step 2: </b> Double click on the software and click run. You will get welcome wizard. Click next. <br/></br><img src="img/visualsvnstep1.png"/><br/>
+			</br>
+			<b>Step 3: </b> Accept License agreement and click next.</br>
+			<b>Step 4: </b> Now you will get select component wizard. First option will install both VisualSVN Server and management console(GUI for repository) on the same system. Second option is to install only management console. Here we prefer first option and click next.</br><img src="img/visualsvnstep2.png"/></br/>
+			</br>
+			<b>Step 5: </b> In the custom setup, you will see options like Location, Repositories, Server Port, Authentication. You can change the installation path. You can choose any location for repositories. This repositories folder contains the projects that we have stored in SVN. Here we have two types of Authentication. First is 'Use Subversive Authentication' where administrator can create users and groups in VisualSVN Server itself. Second option is 'Use Windows Authentication' wherein VisualSVN Server uses windows logon Authentication. Click Next.</br><img src="img/visualsvnstep5.png"/>
+			<br/></br>
+			<b>Step 6: </b> Now the setup wizard is ready to install. Click on Install button.<br/><img src="img/visualsvnstep6.png"/><br/><img src="img/visualsvnstep6-1.png"/><br/><img src="img/visualsvnstep6-2.png"/><br/>Now click on Finish. <br/><br/>
+			<b>Step 7: </b> VisualSVN Server is successfully installed and the Server Window is opened as below image.<br/><br/><img src="img/visualsvnstep7.png"/>
+			</p>
+            
+			<p>
+          </div>
+		  
+        </div><!-- second column -->
+
+        <!-- third column -->
+        <div class="span2 third-column" >
+          <div class="span2" style="border:1px solid #ccc; height:300px; margin-bottom:20px;"></div>  
+           <div class="span2" style="border:1px solid #ccc; height:300px; margin-bottom:20px;"></div>  
+        </div>
+        <!-- third column -->
+		
+		
+      </div> <!-- row ends here -->
+      </div><!-- container ends here -->
+	 
+	 
+      <hr>
+      <footer class="footer">
+        <div class="container" style="text-align:center;">
+        <p>Techfunia 2013 &copy; copy rights reserved</p>
+        </div>
+      </footer>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    
+  </body>
+</html>
